@@ -166,6 +166,10 @@ footer {
     .menu-responsive {
         display: block;
     }
+
+    .menu-responsive ul li {
+        list-style: none;
+    }
     aside, nav {
            display: none;
     }
