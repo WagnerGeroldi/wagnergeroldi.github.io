@@ -1,0 +1,196 @@
+/* global -----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* cabeçalho --------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    background: rgb(96, 120, 131);
+    border-bottom: darkblue 5px solid;
+}
+
+.logo {
+    padding: 14px 0 0 10px;
+}
+
+aside {
+    padding: 25px 10px 0 0 ;
+    text-align: right;
+    color: white;
+}
+aside h5:hover, h1:hover {
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+/* navegacao menu ----------------- */
+
+nav {
+    width: min(15%, 25vw);
+    background: chocolate;
+    position: absolute;
+}
+.menu-responsive {
+    display: none;
+}
+li {
+    background: rgb(96, 120, 131);
+    padding-top: 10px;
+    padding-bottom: 10;
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+li:hover {
+    background: rgb(177, 199, 209);
+    transition: 0.5s;
+}
+
+li a {
+    text-decoration: none;
+    color: seashell;
+    font-weight: 500;
+}
+
+li a:hover {
+    color: tomato;
+}
+
+
+/* main e conteudo -----------------*/
+.menu-responsive {
+
+    display: none;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(70%, 750px);
+    margin: auto;
+}
+
+article {
+    padding-top: 20px;
+    margin: auto;
+    width: 85%;
+    text-align: justify;
+}
+
+article h1 {
+    color: tomato;
+}
+
+article h5 {
+    color: rgb(116, 124, 94);
+}
+
+article h1, h5 {
+    text-align: center;
+}
+
+article p {
+    text-indent: 2rem;
+}
+.image-conteudo {
+    width: 60%;
+}
+
+.image-article {
+    text-align: center;
+}
+
+/* tabela --------*/
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead tr {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+
+tbody tr:nth-child(even), tfoot tr:nth-child(even) {
+    background: rgb(223, 222, 223);
+}
+tbody tr:nth-child(odd), tfoot tr:nth-child(odd) {
+    background: rgb(190, 188, 190);
+}
+
+tbody tr {
+    opacity: 0.8;
+}
+
+tbody tr:hover {
+    opacity: 1;
+}
+
+/* footer ----------------------- */
+
+footer {
+    padding-top: 10px;
+    height: 40px;
+    background: rgb(96, 120, 131);
+    text-align: center;
+}
+
+/* responsive layout --------*/
+
+@media (max-width: 770px) {
+    
+    main {
+        display: block;
+    }
+
+    .menu-responsive {
+        display: block;
+    }
+    aside, nav {
+           display: none;
+    }
+    
+    header img {
+        margin: auto;
+    }
+
+    main {
+        width: 95%;
+    }
+    
+    article {
+        width: 90%;
+    }
+
+    .image-conteudo {
+        width: 85%;
+    }
+    
+    table {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+}
