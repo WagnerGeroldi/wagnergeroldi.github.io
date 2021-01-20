@@ -3,10 +3,13 @@
     $name = $_POST['name'];
     $city = $_POST['city'];
     $date = $_POST['date'];
-	$message = $_POST['message'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
     $mensagem = "name: $name<br>";
     $mensagem .= "city: $city<br>";
     $mensagem .= "date: $date<br>";
+    $mensagem .= "email: $email<br>";
 	$mensagem .= "message: $message<br>";
     $headers = 'From: '.$email."\r\n". 'Reply-To: '.$email."\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
