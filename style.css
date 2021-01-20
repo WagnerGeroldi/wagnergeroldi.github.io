@@ -161,6 +161,7 @@ footer {
 
 fieldset {
     height: 550px;
+    width: 100%
 }
 
 input {
@@ -204,6 +205,18 @@ input {
     
     table {
         width: 100%;
+    }
+
+    fieldset {
+        border: 0;
+    }
+
+    legend {
+        text-align: center;
+        font-size: 1.5em;
+        color: tomato;
+        font-weight: bold;
+        margin-bottom: 15px;
     }
 
     footer {
