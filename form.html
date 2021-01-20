@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Wagner - Contato</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/img-logo.png" alt="Logo do Blog" title="Logo-Blog" height="85px" class="logo">
+        <aside>
+            <h1>Tudo sobre Tecnologia</h1>
+            <h5>Fique por dentro das novidades do mundo tecnológico</h5>
+        </aside>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Smartphones</a></li>
+            <li><a href="notebook.html">Notebooks</a></li>
+            <li><a href="processador.html">Processadores</a></li>
+            <li><a href="videocard.html">Placas de vídeo</a></li>
+            <li><a href="form.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="menu-responsive">
+            <ul>
+                <li><a href="index.html">Smartphones</a></li>
+                <li><a href="notebook.html">Notebooks</a></li>
+                <li><a href="processador.html">Processadores</a></li>
+                <li><a href="videocard.html">Placas de vídeo</a></li>
+                <li><a href="form.html">Contato</a></li>
+            </ul>
+        </div>
+        <article>
+            <h1>Formulário de contato</h1>
+            <h5 style="text-align: justify;"> Este blog não tem propósito financeiro, apenas é uma maneira que encontrei
+                de
+                praticar um poudo do que estou aprendendo em desenvolvimento WEB. Caso tiver interesse
+                em entrar em contato comigo, disponibilizei abaixo um breve formulário! Fique a vontade para
+                mandar alguma sugestão, este blog está criado apenas em HTML e CSS que são as linguagens
+                que estou aprendendo no momento, em breve pretendo aprender JAVASCRIPT, assim poderei
+                deixar o blog mais completo e com funções. <br>
+                <em>Minha mensagem a todos é &apos;NUNCA PARE DE APENDRER!</em> <br>
+                Quem estuda, quem se atualiza, quem revisa seu conhecimento sempre será um pouco melhor
+                que o dia anterior!
+            </h5>
+            <br>
+            <br>
+            <form action="enviar.php" method="POST">
+
+                <fieldset>
+                    <legend>Formulário</legend>
+                    <label for="name">Nome Completo</label> 
+                    <br>
+                    <input type="text" name="name" placeholder="Digite seu nome completo" size="35">
+                    <br>
+                    <label for="city">Cidade</label>
+                    <br>
+                    <input type="text" name="city" placeholder="Digite sua cidade" size="25">
+                    <br>
+                    <label for="date">Data de Nascimento</label>
+                    <br>
+                    <input type="date" name="date">
+                    <br>
+                    <label for="message">Deixe sua mensagem</label>
+                    <br>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="8" placeholder="Sua mensagem aqui..."></textarea>
+                    <br>
+                    <input type="reset" value="Limpar Formuário">
+                    <button type="submit">Enviar</button>
+                </fieldset>
+
+
+            </form>
+
+        </article>
+    </main>
+    <hr>
+    <footer>
+        Desenvolvido por Wagner Lucas Geroldi
+    </footer>
+</body>
+
+</html>

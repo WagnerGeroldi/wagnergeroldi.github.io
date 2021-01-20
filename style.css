@@ -155,6 +155,18 @@ footer {
     text-align: center;
 }
 
+
+/* formulário ---------------*/
+
+
+fieldset {
+    height: 450px;
+}
+
+input {
+    margin: 15px 0 10px 0;
+}
+
 /* responsive layout --------*/
 
 @media (max-width: 770px) {
