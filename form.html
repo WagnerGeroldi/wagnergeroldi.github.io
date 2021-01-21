@@ -36,25 +36,25 @@
             </ul>
         </div>
         <article>
-            <h1>Formulário de contato</h1>
+            <h1>Fale conosco!</h1>
             <h5 style="text-align: justify;"> Este blog não tem propósito financeiro, apenas é uma maneira de
                 praticar um pouco de desenvolvimento WEB. Caso tiver interesse
-                em entrar em contato comigo, disponibilizei abaixo um breve formulário!<br>
+                em entrar em contato este formulário não possui um alvo, então não direcionará para nenhum local!<br>
                 <em>Minha mensagem a todos é &apos;NUNCA PARE DE APENDRER!</em> <br>
                 Quem estuda, quem se atualiza, quem revisa seu conhecimento sempre será um pouco melhor
                 que o dia anterior!
             </h5>
             <br>
             <br>
-            <form action="enviar.php" method="POST">
+            <form action=" " method="POST">
 
                 <fieldset>
                     <legend>Formulário</legend>
-                    <label for="name">Nome Completo</label> 
+                    <label for="name">Nome Completo</label>
                     <br>
                     <input type="text" name="name" placeholder="Digite seu nome completo" size="35">
                     <br>
-                    <label for="email">E-mail</label> 
+                    <label for="email">E-mail</label>
                     <br>
                     <input type="email" name="email" placeholder="seuemail@dominio.com" size="35">
                     <br>
@@ -66,12 +66,32 @@
                     <br>
                     <input type="date" name="date">
                     <br>
+                    <label for="option"> Você gosta de tecnologia?</label>
+                    <br>
+                    <label for="option"><input type="radio" name="option" id="option">Sim</label>
+                    <br>
+                    <label for="option"><input type="radio" name="option" id="option">Não</label>
+                    <br>
+                    <label for="languages">Informe qual Linguagem de programação você mais gosta</label>
+                    <br>
+                    <input type="text" list="linguagens" size="25" placeholder="Escolha uma linguagem">
+                    <datalist id="linguagens">
+                        <option>Java</option>
+                        <option>JavaScript</option>
+                        <option>C++</option>
+                        <option>Phyton</option>
+                        <option>Delphi</option>
+                        <option>Paschal</option>
+                    </datalist>
+                    <br>
+
                     <label for="message">Deixe sua mensagem</label>
                     <br>
                     <br>
-                    <textarea name="message" id="message" cols="30" rows="8" placeholder="Sua mensagem aqui..."></textarea>
+                    <textarea name="message" id="message" cols="30" rows="8"
+                        placeholder="Sua mensagem aqui..."></textarea>
                     <br>
-                    <input type="reset" value="Limpar Formuário">
+                    <input type="reset" value="Limpar Formuário" class="reset">
                     <button type="submit" value="enviar">Enviar</button>
                 </fieldset>
 
