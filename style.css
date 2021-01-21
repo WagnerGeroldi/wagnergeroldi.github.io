@@ -39,13 +39,11 @@ aside h5:hover, h1:hover {
 /* navegacao menu ----------------- */
 
 nav {
-    width: min(15%, 25vw);
-    background: chocolate;
+    width: min(15%, 25vw);  
     position: absolute;
+    
 }
-.menu-responsive {
-    display: none;
-}
+
 li {
     background: rgb(96, 120, 131);
     padding-top: 10px;
@@ -154,6 +152,11 @@ footer {
     text-align: center;
 }
 
+hr {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
 
 /* formulário ---------------*/
 
@@ -161,6 +164,12 @@ footer {
 fieldset {
     height: 550px;
     width: 100%
+}
+
+legend {
+    text-align: center;
+    color: tomato;
+    font-weight: 900;
 }
 
 input {
