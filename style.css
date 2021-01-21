@@ -258,6 +258,10 @@ label, input, textarea {
         margin-bottom: 15px;
     }
 
+    input, button, label {
+        margin: 0 0 10px 0;
+    }
+
     footer {
         font-size: 0.6em;
     }
