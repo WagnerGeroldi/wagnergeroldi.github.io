@@ -64,11 +64,10 @@ aside h5:hover, h1:hover {
 .button.cancel {
 
     color: #e92929;
-    border: 2px red solid;
-    border-radius:0.25rem;
+    text-decoration: none;
+    font-weight: bold;
     height: 50px;
     display: flex;
-    width:50%;
     align-items: center;
     justify-content: center;
     opacity:0.6;
