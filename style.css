@@ -32,8 +32,50 @@ aside h5:hover, h1:hover {
     cursor: pointer;
 }
 
-.menu-trigger {
-    display: none;
+
+/* modal */
+.modal-overlay {
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #F0F2f5;
+    padding: 2.4rem;
+    width: 90%;
+    max-width: 500px
+}
+
+.button.cancel {
+
+    color: #e92929;
+    border: 2px red solid;
+    border-radius:0.25rem;
+    height: 50px;
+    display: flex;
+    width:50%;
+    align-items: center;
+    justify-content: center;
+    opacity:0.6;
+}
+
+.input-group {
+    margin: auto;
 }
 
 /* navegacao menu ----------------- */

@@ -151,24 +151,29 @@
             <h6><em>Fonte:<a href="https://www.tudocelular.com/Samsung/fichas-tecnicas/n6637/Samsung-Galaxy-S21.html"
                         target="_blank">Tudo Celular</a></em></h6>
         </article>
-    <hr>
-    <br>
-    <article>
-        <h1>Asus ROG Phone 3</h1>
-        <h5>A Inovação em formato de Smartphone</h5>
-        <br />
-        <br />
-        <p>O Asus ROG Phone 3 é um smartphone Android com características inovadoras que o tornam uma excelente opção
-            para qualquer tipo de utilização. A tela de 6.59 polegadas coloca esse Asus no topo de sua categoria. A
-            resolução também é alta: 2340x1080 pixel. As funcionalidades oferecidas pelo Asus ROG Phone 3 são muitas e
-            top de linha. Começando pelo 5G que permite a transferência de dados e excelente navegação na internet, além
-            de conectividade Wi-fi e GPS presente no aparelho. </p>
+        <hr>
+        <br>
+        <article>
+            <h1>Asus ROG Phone 3</h1>
+            <h5>A Inovação em formato de Smartphone</h5>
+            <br />
+            <br />
+            <p>O Asus ROG Phone 3 é um smartphone Android com características inovadoras que o tornam uma excelente
+                opção
+                para qualquer tipo de utilização. A tela de 6.59 polegadas coloca esse Asus no topo de sua categoria. A
+                resolução também é alta: 2340x1080 pixel. As funcionalidades oferecidas pelo Asus ROG Phone 3 são muitas
+                e
+                top de linha. Começando pelo 5G que permite a transferência de dados e excelente navegação na internet,
+                além
+                de conectividade Wi-fi e GPS presente no aparelho. </p>
             <p> Tem também leitor multimídia, videoconferência, e
-            bluetooth. Enfatizamos a excelente memória interna de 512 GB mas sem a possibilidade de expansão.
-            O Asus ROG Phone 3 é um produto com poucos concorrentes em termos de multimídia graças à câmera de 64
-            megapixels que permite tirar fotos fantásticas com uma resolução de 9238x6928 pixels e gravar vídeos em 8K a
-            espantosa resolução de 7680x4320 pixels. A espessura de 9.9 milímetros é realmente ótima e torna o Asus ROG
-            Phone 3 ainda mais espetacular.</p>
+                bluetooth. Enfatizamos a excelente memória interna de 512 GB mas sem a possibilidade de expansão.
+                O Asus ROG Phone 3 é um produto com poucos concorrentes em termos de multimídia graças à câmera de 64
+                megapixels que permite tirar fotos fantásticas com uma resolução de 9238x6928 pixels e gravar vídeos em
+                8K a
+                espantosa resolução de 7680x4320 pixels. A espessura de 9.9 milímetros é realmente ótima e torna o Asus
+                ROG
+                Phone 3 ainda mais espetacular.</p>
             <br />
             <br />
             <div class="image-article">
@@ -272,9 +277,31 @@
         </article>
     </main>
 
-        <footer>
-            Desenvolvido por Wagner Lucas Geroldi
-        </footer>
+    <div class="modal-overlay active">
+        <div class="modal">
+            <h2>Atenção!</h2>
+            <p>Este blog não possui fins lucrativos, apenas é um local onde estamos praticando
+                desenvolvimento web! </p>
+            <p>Todos os conteúdos possuem a referência da fonte de informação.
+            </p>
+            <div class="input-group actions">
+                <a href="#" onclick="Modal.close()" class="button cancel">'Fechar Recado'</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const Modal = {
+            close() {
+                document.querySelector('.modal-overlay')
+                    .classList.remove('active')
+            }
+        }
+    </script>
+
+    <footer>
+        Desenvolvido por Wagner Lucas Geroldi
+    </footer>
 </body>
 
 </html>
